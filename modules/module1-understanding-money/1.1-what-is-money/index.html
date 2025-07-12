@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is Money? Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>What Is Money? Quiz</h1>
+  <form id="quiz-form">
+    <div class="question">
+      <p>1. Which of the following is NOT a function of money?</p>
+      <label><input type="radio" name="q1" value="a"> Medium of exchange</label><br>
+      <label><input type="radio" name="q1" value="b"> Store of value</label><br>
+      <label><input type="radio" name="q1" value="c"> Tastes good</label><br>
+      <label><input type="radio" name="q1" value="d"> Unit of account</label>
+    </div>
+    <div class="question">
+      <p>2. Which of these is an example of money?</p>
+      <label><input type="radio" name="q2" value="a"> A gold coin</label><br>
+      <label><input type="radio" name="q2" value="b"> A sandwich</label><br>
+      <label><input type="radio" name="q2" value="c"> A bicycle</label><br>
+      <label><input type="radio" name="q2" value="d"> A book</label>
+    </div>
+    <div class="question">
+      <p>3. Why do people trust money?</p>
+      <label><input type="radio" name="q3" value="a"> Because it is shiny</label><br>
+      <label><input type="radio" name="q3" value="b"> Because others accept it</label><br>
+      <label><input type="radio" name="q3" value="c"> Because it grows on trees</label><br>
+      <label><input type="radio" name="q3" value="d"> Because it tastes good</label>
+    </div>
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+  <div id="result"></div>
+  <script src="quiz.js"></script>
+</body>
+</html>
