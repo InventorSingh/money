@@ -1,4 +1,3 @@
-
 import './App.css'
 
 const modules = [
@@ -81,6 +80,27 @@ function App() {
         <p style={{marginTop: '2em'}}>
           <em>Start by picking a lesson from the sidebar. Each lesson links to its directory in the main repository.</em>
         </p>
+        <div style={{ margin: '2em 0' }}>
+          <a
+            href="https://buymeacoffee.com/inventor.singh"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              padding: "1em 2em",
+              background: "#FFDD00",
+              color: "#000",
+              borderRadius: "6px",
+              fontWeight: "bold",
+              textDecoration: "none",
+              fontSize: "1.1em",
+              boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
+            }}
+            aria-label="Support us on Buy Me a Coffee"
+          >
+            ☕ Buy Me a Coffee
+          </a>
+        </div>
       </main>
     </div>
   );
