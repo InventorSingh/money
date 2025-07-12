@@ -1,28 +1,49 @@
-# Money Skills for the Next Generation — Learn by Doing with VS Code + GitHub Copilot
+# Money Skills Course Website (MVP)
 
-## Course Overview
-This course teaches essential money skills—how money works, how it’s earned, saved, invested, and grown—through short, practical, hands-on coding projects. No prior coding experience is required.
+This is the MVP website for the Money Skills course, built with Vite + React. The site guides students through their learning journey, links to lesson directories, and visualizes progress.
 
-## Modules & Lessons
-- **Module 1: Understanding Money**
-- **Module 2: Earning Money Online**
-- **Module 3: Saving and Growing Money**
-- **Module 4: Money & Meaning**
+## Features
 
-Each lesson is a folder with a README.md containing project instructions and space for your code and notes.
+- Modern, open-source, and easy to run locally
+- Sidebar navigation for modules and lessons
+- Links to lesson directories in the main repo
+- Progress visualization (checklist/roadmap)
+- Ready for deployment on GitHub Pages
 
-## How to Use This Course
-1. Open each lesson folder and follow the instructions in the README.md.
-2. Use the `/site-template` for a starting point for your web projects.
-3. Edit real .html or .md files and publish your work with GitHub Pages.
-4. Use GitHub Copilot and VS Code to help you build and learn.
+## Getting Started
 
-## Outcomes
-- A live portfolio site with your tools, projects, and lessons
-- Real understanding of money (earning, saving, investing, giving)
-- Confidence in using digital tools for financial growth
-- A money mindset focused on creation, not consumption
+1. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser:**
+
+   Visit the local server URL (usually http://localhost:5173) to interact with the site.
+
+## Project Structure
+
+- `src/` — Main React app code
+- `public/` — Static assets
+- `.github/copilot-instructions.md` — Copilot customization
+
+## Deployment
+
+- To deploy on GitHub Pages, follow the Vite + React deployment guide: https://vitejs.dev/guide/static-deploy.html#github-pages
+
+## Customization
+
+- Update the sidebar and roadmap in `src` to match your course modules/lessons.
+- Add links to lesson directories in the main repo for each lesson.
+- Add Copilot prompt suggestions in starter files for students.
 
 ---
 
-*Let’s build this like a flagship course—start small, but powerful.*
+_This site is the central hub for the Money Skills course journey._
