@@ -46,9 +46,30 @@ function App() {
               <h3>{i + 1}. {mod.name}</h3>
               <ul>
                 {mod.lessons.map((lesson, j) => (
-                  <li key={lesson.title}>
+                  <li key={lesson.title} style={{ marginBottom: '0.5em' }}>
                     <a href={`https://github.com/InventorSingh/money/tree/main/${lesson.dir}`} target="_blank" rel="noopener noreferrer">
                       {i + 1}.{j + 1} {lesson.title}
+                    </a>
+                    <br />
+                    <a
+                      href={`https://github.com/codespaces/new?repo=InventorSingh/money&location=modules%2F${encodeURIComponent(mod.name.toLowerCase().replace(/ /g, '-'))}%2F${encodeURIComponent(lesson.dir.split('/').pop())}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'inline-block',
+                        marginTop: '0.2em',
+                        padding: '0.2em 0.7em',
+                        background: '#24292f',
+                        color: '#fff',
+                        borderRadius: '4px',
+                        fontSize: '0.85em',
+                        textDecoration: 'none',
+                        fontWeight: 'bold',
+                        letterSpacing: '0.5px'
+                      }}
+                      aria-label={`Open ${lesson.title} in GitHub Codespaces`}
+                    >
+                      🖥️ Open in Codespaces
                     </a>
                   </li>
                 ))}
@@ -59,6 +80,24 @@ function App() {
       </aside>
       <main className="main-content">
         <h1>Welcome to Money Skills!</h1>
+        <button
+          onClick={() => window.open('https://github.com/InventorSingh/money/tree/main/modules/module1-understanding-money/1.1-what-is-money', '_blank', 'noopener noreferrer')}
+          style={{
+            margin: '1em 0',
+            padding: '0.75em 1.5em',
+            background: '#007bff',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '5px',
+            fontWeight: 'bold',
+            fontSize: '1em',
+            cursor: 'pointer',
+            boxShadow: '0 2px 6px rgba(0,0,0,0.08)'
+          }}
+          aria-label="Start with the first lesson"
+        >
+          🚀 Start Here
+        </button>
         <p>
           This course will guide you through the essentials of earning, saving, investing, and using money wisely—by building real projects.
         </p>
@@ -99,6 +138,11 @@ function App() {
             aria-label="Support us on Buy Me a Coffee"
           >
             ☕ Buy Me a Coffee
+          </a>
+        </div>
+        <div style={{ textAlign: 'center', marginBottom: '1em' }}>
+          <a href="#top" style={{ color: '#007bff', textDecoration: 'underline', fontWeight: 'bold' }}>
+            ↑ Back to Top
           </a>
         </div>
       </main>
